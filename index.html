@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>IP Finder</title>
+		<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+	</head>
+	<body>
+		<main class="container">
+			<img
+				id="logo"
+				src="https://play-lh.googleusercontent.com/isFlW5HLJpCF5-HVecX1oh0bqnCDPYzzzpFWc0BT0mQXJzIvTIVkWLZQw6JMfxEPcVg"
+				alt=""
+				style="width: 100px; height: auto; display: block; margin: auto"
+			/>
+			<form id="form">
+				<label>
+					User IP
+					<input required id="input" type="text" placeholder="Introduce IP" />
+					<small>Example: 54.85.132.205</small>
+				</label>
+				<button type="submit" id="submit">Find Info about this IP</button>
+			</form>
+
+			<div>
+				<pre id="results"></pre>
+			</div>
+		</main>
+
+		<script type="module" src="script.js"></script>
+	</body>
+</html>
